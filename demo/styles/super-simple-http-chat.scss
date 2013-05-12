@@ -1,0 +1,122 @@
+@import "compass_twitter_bootstrap";
+@import "compass/css3";
+
+/* Brand vars */
+$white : #fff;
+$grey : #e0e0e5;
+
+$rounded : 0px;
+
+$iconSpritePath: '/images/';
+
+body {
+	background: $grey;
+}
+
+.inline-list {
+	li {
+		display: inline-block;
+	}
+}
+
+.conversation {
+	.nice-list.empty {
+		padding: 0;
+	}
+
+	.nice-list{
+		background: $white;
+		border-radius: $rounded;
+		list-style: none;
+		margin: 0 0 10px 0;
+		padding: 20px;
+
+		li {
+			@include transition(height 0.15s ease-out, background 0.5s ease-in-out 0.5s, padding 0.15s ease-out);
+			background: #ffb;
+			border-radius: $rounded;
+			margin-bottom: 10px;
+			overflow: hidden;
+			padding: 10px;
+		}
+
+		.collapsed {
+			height: 0;
+			padding: 0 10px;
+		}
+
+		li:last-of-type {
+			margin-bottom: 0;
+		}
+
+		.time {
+			font-size: 75%;
+			color: #555;
+			float: left;
+			line-height: 100%;
+
+			.icon-time {
+				vertical-align: text-bottom;
+			}
+		}
+
+		.author {
+			float: left;
+			vertical-align: top;
+			margin-right: 10px;
+			width: 40%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+
+			img {
+				float: left;
+				margin-right: 5px;
+			}
+
+			a {
+				float: left;
+				width: 78%;
+			}
+		}
+
+		.message-body {
+			float: left;
+			width: 58%;
+
+		}
+	}
+
+	form {
+		background: $white;
+		border-radius: $rounded;
+		padding: 20px;
+
+		input[type=text] {
+			width: 98%;
+		}
+	}
+}
+
+.settings {
+
+	.nice-list {
+		list-style: none;
+		margin: 0 0 10px 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 10px;
+			display: inline-block;
+			margin-right: 5px;
+			padding: 5px;
+
+			.user-email {
+				margin-left: 5px;
+			}
+		}
+	}
+
+	form {
+		width: 100%;
+	}
+}

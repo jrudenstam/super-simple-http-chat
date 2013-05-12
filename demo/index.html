@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Super simple http chat</title>
+		<meta name="description" content="">
+		
+		<link rel="stylesheet" href="styles/super-simple-http-chat.css">
+	</head>
+	<body>
+	<div class="container">
+		<div class="row">
+			<section class="conversation span8">
+				<h2>Chat</h2>
+				<form id="chat-form">
+					<input type="text" id="chat-input" autofocus placeholder="First type your email"></textarea>
+					<button type="submit" class="btn btn-inverse">Send</button>
+				</form>
+				<ul id="chat-list" class="nice-list empty">
+				</ul>
+			</section>
+			<section class="settings span4">
+				<h2>Chatters</h2>
+				<p>Click to toggle'mute'. While 'muted' chatters won't recive the messages from you.</p>
+				<ul id="clients-list" class="inline-list nice-list">  
+				</ul>
+				<span id="leave-chat" class="btn">Leave chat</span>
+			</section>
+		</div>
+	</div>
+	
+	<!-- build:js scripts/amd-app.js -->
+	<script data-main="scripts/main" src="scripts/vendor/require.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

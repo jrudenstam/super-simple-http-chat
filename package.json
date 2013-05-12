@@ -1,0 +1,18 @@
+{
+  "author": {
+  	"name": "Jacob Rudenstam"
+  	},
+  "name": "super-simple-http-chat",
+  "version": "0.0.1",
+  "licenses": [{
+      "type": "MIT",
+      "url": "http://jrudenstam.mit-license.org/"
+    }],
+  "dependencies": {},
+  "devDependencies": {
+  	"grunt": "*",
+  	"grunt-rigger": "*",
+    "gravatar": "*",
+    "websocket": "*"
+  }
+}
